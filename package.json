@@ -1,0 +1,24 @@
+{
+  "name": "node-agent-got",
+  "version": "1.0.0",
+  "description": "a node project got",
+  "main": "index.js",
+  "author": "Maxime RICHARD <maxime.richard@fabernovel.com>",
+  "engines": {
+    "node": ">=20.17.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run build && node ./dist/index.js",
+    "build": "yarn run clean && ./node_modules/typescript/bin/tsc",
+    "clean": "rimraf ./dist"
+  },
+  "dependencies": {
+    "rimraf": "6.0.1",
+    "got": "11.8.6"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.0",
+    "typescript": "5.6.3"
+  }
+}
